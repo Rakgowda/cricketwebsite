@@ -1,0 +1,257 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+.divsection{
+    top: 2%;
+
+}
+
+
+.image{
+
+    margin-left: 5%;
+    width: 100px;
+    height: 100px;
+
+    transition:transform 1s;
+
+}
+
+.image:hover{
+    transform: rotate(360deg);
+}
+ul{
+    display: flex;
+
+    justify-content: center;
+
+    position: absolute;
+    font-size: 18px;
+    top: 0%;
+    text-align: center;
+    margin-left: 60%;
+
+
+
+
+}
+li{
+
+    transition: transform 1s;
+}
+li:hover{
+    transform: scale(2);
+    font-weight: 200;
+}
+
+
+
+.nav ul>li{
+    margin: 25px;
+    list-style: none;
+    font-size: 13px;
+    padding: 10px 0;
+    font-weight: 500;
+    /* font: bold; */
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+.carimage{
+    width: 100%;
+    height: 80%;
+margin-top: 2%;
+background: rgb(9,1,1);
+background: linear-gradient(90deg, rgba(9,1,1,1) 0%, rgba(238,15,36,1) 45%, rgba(25,2,2,1) 100%);
+
+border-radius: 0% 0% 50% 50%;
+
+transition: border-radius 2s;
+
+
+
+}
+
+.carimage:hover{
+
+  border-radius: 50% 50% 0% 0%;
+}
+
+
+.vi{
+
+width: 600px;
+height: 400px;
+margin-left: 50%;
+margin-right: 50%;
+transform: translate(-50%,0%);
+border-image: 10px;
+object-fit: contain;
+
+
+
+}
+div.carimage h1{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 100px;
+    transform: translate(-10%,-50%)
+
+
+
+
+}
+
+.carousel-inner{
+
+    width: 75%;
+    height: 400px;
+
+
+
+}
+
+.carousel-indicators>li{
+    margin-top: 400px;
+
+
+
+}
+
+.carousel-inner slide{
+    background-color: aqua;
+}
+
+.news{
+    background: rgb(9,1,1);
+background: linear-gradient(90deg, rgba(9,1,1,1) 0%, rgba(238,15,36,1) 45%, rgba(25,2,2,1) 100%);
+
+}
+
+div.card{
+    width: 300px;
+    height: 200px;
+    background: white;
+
+    left: 50%;
+    transform: translate(-50%,0%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+     transition: all 1s ease-in;
+    margin: 10px;
+
+}
+
+
+div.card:hover {
+
+    background: black;
+    width: 100%;
+
+}
+
+
+.card-body{
+
+    color: black;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    letter-spacing: 2px;
+    top: 80%;
+    transform: translate(0%,-50%);
+}
+
+div.card:hover  .card-body{
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .image{
+        top: 0%;
+        margin-left: 40%;
+        transform: translate(-50%,-50%);
+        transform: scale(.7);
+        z-index: 2;
+    }
+
+    ul{
+
+        display: flex;
+
+        justify-content: center;
+
+        flex-direction: column;
+        position: absolute;
+
+
+        top: 1%;
+        text-align: center;
+        right: 0%;
+        background:black;
+        height: 100vh;
+        width: 250px;
+        color: white;
+
+        font-size: 25px;
+
+        transition: transform 1s ease;
+        /* transition:transform 1s cubic-bezier(0.86, 0, 0.07, 1); */
+        
+        transform: translateX(100vw);
+        /* display: none; */
+        z-index: 1;
+
+
+    }
+
+
+    .harbar{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 5px;
+        width: 30px;
+        height: 3px;
+        background-color: black;
+
+
+    }
+    .hand{
+        position: absolute;
+        right: 5%;
+        top: 10%;
+        z-index: 2;
+
+    }
+
+    .k{
+       
+        transform: translateX(0vw);
+        
+        
+        z-index: 1;
+    }
+.colorr{
+    background-color: white;
+}
+
+    .carimage{
+        display: none;
+    }
+    .container-fluid{
+       
+    }
+  }
+
